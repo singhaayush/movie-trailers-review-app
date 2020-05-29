@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context=".SearchMovieActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/upper_div"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    app:endIconDrawable="@drawable/ic_search_black_24dp">
+
+                    <EditText
+                        android:focusableInTouchMode="true"
+                        android:textAlignment="center"
+                        android:id="@+id/movie_query"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Search Movies .."
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/colorPrimary" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:id="@+id/search_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#b76e76"
+                        android:text="search" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+
+                android:id="@+id/lower_div"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+                 <com.airbnb.lottie.LottieAnimationView
+                     android:id="@+id/search_lottie_image"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_centerInParent="true"
+                     app:lottie_rawRes="@raw/blackloading"
+                     app:lottie_autoPlay="true"
+                     app:lottie_loop="true"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/search_result_rcv_"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

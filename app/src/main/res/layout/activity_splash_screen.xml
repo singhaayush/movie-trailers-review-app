@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:background="@drawable/oldpage"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen">
+    <ImageView
+        android:id="@+id/splash_logo"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logosmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_marginTop="100dp"
+        android:id="@+id/projector"
+        android:scaleType="centerCrop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_rawRes="@raw/projector"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        />
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_marginLeft="-100dp"
+        android:layout_toRightOf="@id/projector"
+        android:id="@+id/swing"
+        android:layout_marginTop="85dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/splash_logo"
+        android:scaleType="centerCrop"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:lottie_rawRes="@raw/swinggif"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/making"
+        android:layout_below="@+id/swing"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:lottie_rawRes="@raw/makingjusttrailer"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        />
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_marginTop="100dp"
+        android:id="@+id/loading"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/making"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_rawRes="@raw/loading"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</RelativeLayout>

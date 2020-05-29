@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView android:orientation="vertical"
+    app:cardCornerRadius="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="170dp"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:background="@color/yellow"
+        android:elevation="30dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+
+            android:scaleType="fitCenter"
+
+            android:id="@+id/cast_image"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+
+
+
+        <TextView
+            android:id="@+id/cast_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/rating_star"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="James Cameron"
+            android:textColor="@color/boxes_interior_color"
+            android:textSize="12sp" />
+        <TextView
+            android:padding="2dp"
+            android:gravity="center"
+            android:id="@+id/cast_role"
+            android:textSize="12sp"
+            android:layout_toRightOf="@+id/rating_star"
+            android:textColor="#c0c0c0"
+            android:text="James Cameron"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

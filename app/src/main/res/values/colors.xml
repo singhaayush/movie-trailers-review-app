@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="white">#ffffff</color>
+    <color name="boxes_interior_color">#413F41</color>
+    <color name="pink">#ff9cee</color>
+    <color name="green">#baffc9</color>
+    <color name="yellow">#ffffba</color>
+    <color name="lightgrey">#d3d3d3</color>
+    <color name="navyBlue">#1e2e61</color>
+</resources>
